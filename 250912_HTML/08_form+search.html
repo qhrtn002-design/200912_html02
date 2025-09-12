@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://search.naver.com/search.naver">
+      <input name="query" /><br />
+      <!-- radio, checkbox, select+option -->
+      <label>
+        검색 탭 :
+        <input type="radio" name="ssc" value="tab.nx.all" /> 전체
+        <input type="radio" name="ssc" value="tab.blog.all" /> 블로그
+        <input type="radio" name="ssc" value="tab.news.all" /> 뉴스
+        <input type="radio" name="ssc" value="tab.cafe.all" /> 카페
+      </label>
+      <br />
+      <label>
+        정렬기준 :
+        <select name="nso">
+          <option value="so%3Add%2Cp%3Aall ">최신순</option>
+          <option value="so%3Ar%2Cp%3Aall" selected>관련도순</option>
+        </select>
+      </label>
+      <button>검색</button>
+    </form>
+  </body>
+</html>
