@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>색상과 사이즈</title>
+    <style>
+      .my-section {
+        /* color */
+        color: brown;
+        /* 해당 영역이 차지 하고 있는 배경을 채워주는 색 */
+        background-color: beige;
+        /* 외곽선 색 */
+        /* border : 두께 색상 타입 */
+        border: 1px green solid;
+      }
+      .my-section2 {
+        /* R/G/B hex 16진법 */
+        /* color: #33aa99;
+        background-color: #994433;
+        border: 1px #123456 solid; */
+        color: #f1c40f;
+        background-color: #1a1a2e;
+        border: 1px #16213e solid;
+        /* ai한테 적절한 색추천 -> hex code 추천 */
+      }
+      p {
+        font-size: 12px;
+      }
+      div {
+        font-size: 12px;
+      }
+      section {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section>
+        em 테스트 : 24px - 2em = 48px
+        <section>
+          em 테스트 : 48px - 2em = 48px
+          <section>em 테스트 96px - 2em = 192px</section>
+        </section>
+      </section>
+    </div>
+    <p>안녕하세요</p>
+    <!-- 2가지 : 색상이 적용되는 경우 (3가지) / 색상을 적용하는 방법 (2가지) -->
+    <!--
+    1 : 텍스트(폰트) 색
+    2 : 배경 색
+    3 : 외곽선 색  
+     -->
+    <section class="my-section">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta
+      dolorem, tempora, commodi error iste facere minima corrupti hic eligendi
+      aliquam totam aspernatur unde reiciendis blanditiis illo libero ut et.
+    </section>
+    <section class="my-section2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus beatae,
+      quidem porro reiciendis ut ex dicta consequatur exercitationem laborum
+      accusantium adipisci tenetur, enim perferendis! Asperiores deserunt
+      perferendis culpa saepe laboriosam.
+    </section>
+  </body>
+</html>
