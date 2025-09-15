@@ -24,19 +24,70 @@
         border: 1px #16213e solid;
         /* ai한테 적절한 색추천 -> hex code 추천 */
       }
+      /* px, em, rem, %, vw/vh */
       p {
-        font-size: 12px;
+        /* font-size: 12px; */
+        font-size: 24px;
       }
       div {
-        font-size: 12px;
+        font-size: 4px;
       }
       section {
+        /* font-size: 1em; */
         font-size: 2em;
+        /* 직전에 물려받은 크기의 배수로 */
+      }
+      html {
+        /* font-size: 16px; */
+        font-size: 32px;
+      }
+      :root {
+        /* font-size: 16px; */
+        font-size: 8px;
+      }
+      .rem {
+        /* html에 적용된 크기에 비례해서 고정적으로 표현 */
+        font-size: 2rem;
+      }
+      .box {
+        width: 240px;
+        height: 240px;
+        background-color: beige;
+      }
+      .box2 {
+        width: 50%;
+        height: 50%;
+        background-color: teal;
+      }
+      .box3 {
+        width: 70vw;
+        height: 70vh;
+        background-color: aqua;
+        /* 브라우저의 가로폭(100vw), 브라우저의 세로폭(100vh) */
       }
     </style>
   </head>
   <body>
     <div>
+      <section class="box">
+        <section class="box2"></section>
+      </section>
+      <section class="box3"></section>
+      <section>
+        em 테스트 : 24px - 2em => 48px
+        <section>
+          em 테스트 2 : 48px - 2em => 96px
+          <section>em 테스트 3 : 96px - 2em => 192px</section>
+        </section>
+      </section>
+      <section class="rem">
+        rem 테스트
+        <section class="rem">
+          rem 테스트 2
+          <section class="rem">rem 테스트 3</section>
+        </section>
+      </section>
+    </div>
       <section>
         em 테스트 : 24px - 2em = 48px
         <section>
