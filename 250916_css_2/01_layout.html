@@ -146,6 +146,11 @@
         padding: 12px;
         border-radius: 12px;
       }
+
+      body > section {
+        /* body에 바로 속한 section의 경우 해당 */
+        padding: 24px;
+      }
       /* 색상 설정 */
       /* https://www.bairesdev.com/tools/ai-colors */
       /* https://2colors.colorion.co/ */
@@ -165,23 +170,68 @@
         text-align: center;
       }
 
-      #intro div{
+      #intro div {
         line-height: 2;
+      }
+
+      #tech-stack ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      #tech-stack li{
+        list-style: none;
+        width: 128px;
+        aspect-ratio: 1;
+        background-color: #3b0270;
+        border-radius: 8px;
+        border: 1px transparent solid;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #tech-stack img{
+        width: 90%;
+        background-color: white;
+        border-radius: 50%;
+        
+        
       }
       /* 레이아웃 : 박스모델, 플렉스 */
     </style>
   </head>
   <body>
     <section id="intro">
-      <h1 class="title">반갑습니다<br />
-       성장하는 백엔드 개발자<br />
-       [서희수]입니다</h1>
+      <h1 class="title">
+        반갑습니다<br />
+        성장하는 백엔드 개발자<br />
+        [서희수]입니다
+      </h1>
       <section class="box">
-        <p>
-          사용자에게 더 나은 가치를 제공하기 위해, <strong>안정적이고 확장 가능한
-          시스템</strong>을 구축하는 데 깊은 흥미를 느낍니다. 새로운 기술을 배우고
-          적용하며 꾸준히 성장하는 개발자가 되겠습니다.
-        </p>
+        <div>
+          사용자에게 더 나은 가치를 제공하기 위해,
+          <strong>안정적이고 확장 가능한 시스템</strong>을 구축하는 데 깊은
+          흥미를 느낍니다. 새로운 기술을 배우고 적용하며 꾸준히 성장하는
+          개발자가 되겠습니다.
+        </div>
+      </section>
+    </section>
+
+    <section id="tech-stack">
+      <section class="box">
+        <ul>
+          <li><img src="icons8-java-48.png"></li>
+          <li><img src="icons8-spring-boot-48.png"></li>
+          <li><img src="icons8-mysql-50.png"></li>
+          <li><img src="icons8-aws-50.png"></li>
+          <li><img src="icons8-github-50.png"></li>
+        </ul>
       </section>
     </section>
 
