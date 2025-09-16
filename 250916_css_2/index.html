@@ -147,9 +147,17 @@
         border-radius: 12px;
       }
 
+      body {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+      }
       body > section {
         /* body에 바로 속한 section의 경우 해당 */
-        padding: 24px;
+        padding: 0 24px;
+        max-width: 480px;
+        margin: auto;
+        width: 100%;
       }
       /* 색상 설정 */
       /* https://www.bairesdev.com/tools/ai-colors */
@@ -202,6 +210,25 @@
         background-color: white;
         border-radius: 50%;
       }
+
+      #portfoilio > h2 {
+        margin-bottom: 0;
+      }
+
+      #portfoilio .item {
+        background-color: #3b0270;
+        width: 100%;
+        height: 160px;
+        border-radius: 8px;
+        border: 1px #fff1f1 solid;
+        padding: 0 16px;
+      }
+
+      #portfoilio .box {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
       /* 레이아웃 : 박스모델, 플렉스 */
     </style>
   </head>
@@ -239,5 +266,34 @@
     <!-- 기술 스택 (부트캠프) -->
 
     <!-- 포트폴리오 (3종) -->
+    <section id="portfoilio">
+      <section class="box">
+        <h2>포트폴리오</h2>
+        <div class="item">
+          <h3>여행 추천 프로젝트</h3>
+          <p>
+            사용자 맞춤형 여행지를 추천하는 API 서버를 개발했습니다. Spring
+            Boot를 기반으로 RESTful API를 설계하고, MySQL을 사용하여 여행지
+            데이터를 효율적으로 관리했습니다.
+          </p>
+        </div>
+        <div class="item">
+          <h3>재능 매칭 프로젝트</h3>
+          <p>
+            사용자 맞춤형 여행지를 추천하는 API 서버를 개발했습니다. Spring
+            Boot를 기반으로 RESTful API를 설계하고, MySQL을 사용하여 여행지
+            데이터를 효율적으로 관리했습니다.
+          </p>
+        </div>
+        <div class="item">
+          <h3>AWS 인프라 프로젝트</h3>
+          <p>
+            사용자 맞춤형 여행지를 추천하는 API 서버를 개발했습니다. Spring
+            Boot를 기반으로 RESTful API를 설계하고, MySQL을 사용하여 여행지
+            데이터를 효율적으로 관리했습니다.
+          </p>
+        </div>
+      </section>
+    </section>
   </body>
 </html>
