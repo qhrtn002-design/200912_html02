@@ -136,21 +136,55 @@
       }
 
       body {
-        margin: 0; /* 기본 마진 */
+        margin: 0;
+        background-color: #fff1f1;
+        color: #e9b3fb; /* 기본 마진 */
       }
 
+      .box {
+        background-color: #6f00ff;
+        padding: 12px;
+        border-radius: 12px;
+      }
       /* 색상 설정 */
+      /* https://www.bairesdev.com/tools/ai-colors */
+      /* https://2colors.colorion.co/ */
+      /* https://colorhunt.co/ */
+      /* https://mobilepalette.colorion.co/ */
 
+      /* https://colorhunt.co/palette/3b02706f00ffe9b3fbfff1f1
+    - 전체 배경색 : #FFF1F1
+    - 박스색 : #6F00FF
+    - 컨텐츠색 : #3B0270
+    - 글자색 : #E9B3FB */
+
+      #intro {
+        padding: 24px;
+      }
+      #intro .title {
+        text-align: center;
+      }
+
+      #intro div{
+        line-height: 2;
+      }
       /* 레이아웃 : 박스모델, 플렉스 */
     </style>
   </head>
   <body>
-    <h1 class="title">반갑습니다, 성장하는 백엔드 개발자 [서희수]입니다</h1>
-    <p>
-      사용자에게 더 나은 가치를 제공하기 위해, 안정적이고 확장 가능한 시스템을
-      구축하는 데 깊은 흥미를 느낍니다. 새로운 기술을 배우고 적용하며 꾸준히
-      성장하는 개발자가 되겠습니다.
-    </p>
+    <section id="intro">
+      <h1 class="title">반갑습니다<br />
+       성장하는 백엔드 개발자<br />
+       [서희수]입니다</h1>
+      <section class="box">
+        <p>
+          사용자에게 더 나은 가치를 제공하기 위해, <strong>안정적이고 확장 가능한
+          시스템</strong>을 구축하는 데 깊은 흥미를 느낍니다. 새로운 기술을 배우고
+          적용하며 꾸준히 성장하는 개발자가 되겠습니다.
+        </p>
+      </section>
+    </section>
+
     <!-- flex 기반 레이아웃. svg repo. -->
     <!-- 기술 스택 (부트캠프) -->
 
