@@ -4,124 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>안녕하세요 [서희수]입니다</title>
-    <!-- 
-    1.favicon
-    2.og tag
-    3.webfont
-     -->
+    <!-- favicon -->
+    <!-- og tag -->
     <style>
+      /* 폰트 */
+      @font-face {
+        font-family: "YesMyungjo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-display: swap;
+      }
 
-        @font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "YesMyungjo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Bold.woff")
+          format("woff");
+        font-weight: 700;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2")
+          format("woff2");
+        font-weight: 100;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2")
+          format("woff2");
+        font-weight: 200;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2")
+          format("woff2");
+        font-weight: 300;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2")
+          format("woff2");
+        font-weight: 500;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2")
+          format("woff2");
+        font-weight: 600;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;
-}
-        @font-face {
-    font-family: 'Soonbatang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Light.woff') format('woff');
-    font-weight: 300;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2")
+          format("woff2");
+        font-weight: 800;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Soonbatang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Medium.woff') format('woff');
-    font-weight: 500;
-    font-display: swap;
-}
+      @font-face {
+        font-family: "Paperozi";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2")
+          format("woff2");
+        font-weight: 900;
+        font-display: swap;
+      }
 
-@font-face {
-    font-family: 'Soonbatang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Bold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
-}
-.title{
-    font-family: "Paperozi";
-}
+      body {
+        font-family: "YesMyungjo";
+      }
 
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    font-family: "Soonbatang";
-}
+      .title {
+        font-family: "Paperozi";
+      }
 
-/* 색상설정 */
-/*  */
+      /* 기본 전체 설정 */
+      * {
+        box-sizing: border-box;
+        /* 모든 box width, height를 우리 지정에 맞게 */
+      }
 
+      body {
+        margin: 0; /* 기본 마진 */
+      }
+
+      /* 색상 설정 */
+
+      /* 레이아웃 : 박스모델, 플렉스 */
     </style>
-</head>
-<body>
-    <h1 class="title">
-        반갑습니다, 성장하는 백엔드 개발자 [서희수]입니다
-    </h1>
+  </head>
+  <body>
+    <h1 class="title">반갑습니다, 성장하는 백엔드 개발자 [서희수]입니다</h1>
     <p>
-        반갑습니다, 성장하는 백엔드 개발자 [서희수]입니다
-
+      사용자에게 더 나은 가치를 제공하기 위해, 안정적이고 확장 가능한 시스템을
+      구축하는 데 깊은 흥미를 느낍니다. 새로운 기술을 배우고 적용하며 꾸준히
+      성장하는 개발자가 되겠습니다.
     </p>
     <!-- flex 기반 레이아웃. svg repo. -->
     <!-- 기술 스택 (부트캠프) -->
 
-
     <!-- 포트폴리오 (3종) -->
-</body>
+  </body>
 </html>
